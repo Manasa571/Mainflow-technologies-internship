@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Navigation Menu</title>
+    <style>
+        * {
+            margin: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav-list li {
+            position: relative;
+            margin: 0 20px;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: rgb(212, 21, 21);
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .nav-list a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            min-width: 150px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .dropdown li {
+            width: 100%;
+        }
+
+        .dropdown a {
+            padding: 10px;
+            display: block;
+            color: white;
+        }
+
+        .dropdown a:hover {
+            background-color: #575757;
+        }
+
+        .nav-list li:hover .dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li>
+                <a href="#">Services</a>
+                <ul class="dropdown">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">SEO Services</a></li>
+                    <li><a href="#">Marketing</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
