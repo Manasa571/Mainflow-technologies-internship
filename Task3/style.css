@@ -1,0 +1,60 @@
+
+
+/* <!-- style.css (Enhanced Styling) --> */
+<style>
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    margin: 0;
+}
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+input {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #1a5ecf;
+}
+p {
+    margin-top: 10px;
+}
+a {
+    color: #2575fc;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+
+
+
+
+
